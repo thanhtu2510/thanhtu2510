@@ -1,0 +1,108 @@
+body {
+    display: block;
+    background-image: linear-gradient(to bottom, #6a5af9, #f62682);
+    background-repeat: no-repeat;
+}
+
+*{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    background: black;
+    display: flex;
+    height: 4em;
+    line-height: 4em;
+    justify-content: space-around;
+}
+
+.logo {
+    font-size: 2em;
+    padding-left: 2em;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    padding-right: 2.5em;
+    font-size: 17px;
+}
+
+.menu li a:hover {
+    color: #e32879;
+    transition: color .2s ease-out;
+}
+
+.menu_down {
+    background: black;
+    width: 137px;
+    height: 10em;
+    line-height: 3em;
+    margin: 0px auto;
+    position: absolute;
+    top: 64px;
+    right: 450px;
+    display: none;
+}
+
+.menu_down li {
+    text-align: center;
+    padding: 0px;
+}
+
+.menu_down li a:hover {
+    color: #e32879;
+}
+
+.menu .menu_link:hover .menu_down{
+    display: block;
+}
+
+.avatar{
+    border-radius: 100px;
+}
+
+h3{
+    font-family: 'Pacifico', cursive;
+    margin: 10 px 0 8px 0;
+}
+
+.button{
+    margin-bottom: 20px;
+    background-color: white;
+    border: 0;
+    width: 250px;
+    padding: 15px 0 15px 0;
+    border-radius: 100px;
+    font-family: 'Pacifico', cursive;
+    font-size: 15px;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+    -webkit-box-shadow: 0px 11px 22px -9px #000000; 
+    box-shadow: 0px 11px 22px -9px #000000;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: white;
+    background-color: black;
+}
+
+#backtop{
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+}
